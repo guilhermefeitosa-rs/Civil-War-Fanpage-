@@ -6,14 +6,16 @@ Fan page independente e educacional, sem vínculo oficial com a Marvel Comics. F
 Abra `index.html` no navegador (ou use a extensão Live Server do VS Code). Não precisa de servidor nem de instalação.
 
 ## Estrutura
-- `index.html`: estrutura das seções
-- `css/style.css`: visual (paleta em variáveis no topo)
+Cada seção é uma página HTML própria; a navegação acontece na mesma aba.
+- `index.html` (Início), `historia.html`, `guia.html`, `personagens.html`, `sobre.html`
+- `css/style.css`: visual de todas as páginas (paleta em variáveis no topo)
 - `js/editions.js`: dados das 141 edições
-- `js/script.js`: lista, busca, filtros, paginação, progresso e menu
+- `js/script.js`: código comum (menu mobile e carregamento de imagens)
+- `js/guia.js`: lista, busca, filtros, paginação e progresso (só em `guia.html`)
 - `assets/images/`: imagens (`hero/`, `editions/`, `characters/`)
-- `docs/lista-original.txt`: lista fornecida (fonte dos dados)
-- `docs/como-adicionar-imagens.md`: passo a passo para as imagens
-- `docs/notas-de-revisao.md`: inconsistências encontradas na lista
+- `docs/`: lista original, instruções de imagens, notas de revisão e lista de nomes de imagens
+
+O cabeçalho e o rodapé se repetem nas 5 páginas. Ao alterar um link do menu, altere nos 5 arquivos.
 
 ## Dados
 - **79** entradas originais → **141** edições individuais após expandir os **25** intervalos.

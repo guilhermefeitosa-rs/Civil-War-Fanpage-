@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guerra Civil — Guia de Leitura | Civil War: Reading Guide</title>
+  <title>Início | Guerra Civil — Guia de Leitura</title>
   <meta name="description" content="Fan page independente e guia de leitura de Guerra Civil (2006), da Marvel Comics.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,12 +12,12 @@
 </head>
 <body>
 
-<a class="skip-link" href="#guia">Ir para o guia de leitura</a>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-<!-- A. CABEÇALHO -->
+<!-- CABEÇALHO (igual em todas as páginas; ao alterar, altere nos 5 arquivos) -->
 <header class="site-header">
   <div class="container header-inner">
-    <a href="#inicio" class="logo" aria-label="Civil War — Fan Page & Reading Guide">
+    <a href="index.html" class="logo" aria-label="Civil War — Fan Page & Reading Guide">
       <svg class="logo-star" viewBox="0 0 100 100" aria-hidden="true">
         <defs>
           <clipPath id="metade-esq"><rect x="0" y="0" width="50" height="100"/></clipPath>
@@ -36,29 +36,28 @@
 
     <nav class="main-nav" id="menu-principal" aria-label="Navegação principal">
       <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#historia">A História</a></li>
-        <li><a href="#guia">Guia de Leitura</a></li>
-        <li><a href="#personagens">Personagens</a></li>
-        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="historia.html">A História</a></li>
+        <li><a href="guia.html">Guia de Leitura</a></li>
+        <li><a href="personagens.html">Personagens</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
       </ul>
-      <a href="#guia" class="btn btn-primary">COMEÇAR A LER</a>
+      <a href="guia.html" class="btn btn-primary">COMEÇAR A LER</a>
     </nav>
   </div>
 </header>
 
-<main>
-
-<!-- B. BANNER PRINCIPAL -->
-<section class="hero" id="inicio">
+<main id="conteudo">
+<!-- BANNER PRINCIPAL -->
+<section class="hero">
   <div class="container hero-grid">
     <div class="hero-text">
       <h1>CIVIL WAR</h1>
       <p class="hero-quote">“Uma lei. Dois lados. Um universo dividido.”</p>
       <p class="hero-desc">Guerra Civil vai muito além de sua minissérie principal. Explore o conflito e acompanhe as edições complementares em um guia de leitura organizado.</p>
       <div class="hero-actions">
-        <a href="#guia" class="btn btn-primary">EXPLORAR GUIA</a>
-        <a href="#historia" class="btn btn-ghost">ENTENDER O CONFLITO</a>
+        <a href="guia.html" class="btn btn-primary">EXPLORAR GUIA</a>
+        <a href="historia.html" class="btn btn-ghost">ENTENDER O CONFLITO</a>
       </div>
     </div>
 
@@ -72,130 +71,16 @@
   </div>
 </section>
 
-<!-- C. CONTEXTO -->
-<section class="section" id="historia">
+<!-- ATALHOS PARA AS OUTRAS PÁGINAS -->
+<section class="section page-index">
   <div class="container">
-    <h2 class="section-title">QUANDO O MUNDO EXIGE UMA ESCOLHA</h2>
-    <p class="lead">Em Guerra Civil, uma lei de registro de super-humanos divide os heróis. De um lado, a defesa da regulamentação; do outro, a defesa da liberdade individual. Não é uma disputa simples, e a história se espalha por muitas séries além da minissérie principal.</p>
-
-    <div class="sides">
-      <article class="side side-register">
-        <h3>REGISTRO</h3>
-        <p>Defende a regulamentação de indivíduos com superpoderes, com registro e responsabilidade perante o Estado.</p>
-      </article>
-      <article class="side side-resist">
-        <h3>RESISTÊNCIA</h3>
-        <p>Se opõe à medida e defende a liberdade individual e o direito de agir sem controle governamental.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- D. GUIA DE LEITURA -->
-<section class="section section-alt" id="guia">
-  <div class="container">
-    <h2 class="section-title">SEU GUIA DE LEITURA</h2>
-    <p class="lead">Explore a sequência de edições de Guerra Civil, acompanhe seu progresso e adicione as imagens de cada quadrinho conforme o projeto evolui.</p>
-
-    <div class="modes" role="group" aria-label="Modalidades de leitura">
-      <button class="mode mode-essential" type="button" data-mode="essencial" aria-pressed="false">
-        <span class="mode-name">Leitura essencial</span>
-        <span class="mode-desc">Edições da minissérie principal presentes na lista.</span>
-      </button>
-      <button class="mode mode-recommended" type="button" data-mode="recomendada" aria-pressed="false">
-        <span class="mode-name">Leitura recomendada</span>
-        <span class="mode-desc">Seleção editorial provisória: títulos “Civil War”.</span>
-      </button>
-      <button class="mode mode-complete is-active" type="button" data-mode="completo" aria-pressed="true">
-        <span class="mode-name">Guia completo</span>
-        <span class="mode-desc">Todas as edições, na ordem da lista.</span>
-      </button>
-    </div>
-
-    <div class="progress">
-      <p class="progress-text" id="progress-text" aria-live="polite"></p>
-      <div class="progress-bar" id="progress-bar" role="progressbar" aria-label="Progresso de leitura" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-        <div class="progress-fill" id="progress-fill"></div>
-      </div>
-    </div>
-
-    <div class="toolbar" id="lista-topo">
-      <div class="search">
-        <label for="search-input">Buscar por série ou número</label>
-        <input type="search" id="search-input" placeholder="Ex.: Black Panther ou 533" autocomplete="off">
-      </div>
-      <div class="filters" role="group" aria-label="Filtrar por situação">
-        <button type="button" class="filter is-active" data-filter="todas" aria-pressed="true">Todas</button>
-        <button type="button" class="filter" data-filter="nao-lidas" aria-pressed="false">Não lidas</button>
-        <button type="button" class="filter" data-filter="lidas" aria-pressed="false">Concluídas</button>
-      </div>
-    </div>
-
-    <p class="results-info" id="results-info" aria-live="polite"></p>
-
-    <ol class="edition-list" id="edition-list"></ol>
-
-    <div class="empty" id="empty-message" hidden>
-      <p id="empty-text"></p>
-      <button type="button" class="btn btn-ghost" id="clear-search">LIMPAR BUSCA E FILTROS</button>
-    </div>
-
-    <nav class="pagination" id="pagination" aria-label="Páginas da lista">
-      <button type="button" class="btn btn-ghost" id="page-prev">ANTERIOR</button>
-      <span id="page-info"></span>
-      <button type="button" class="btn btn-ghost" id="page-next">PRÓXIMA</button>
-    </nav>
-
-    <button type="button" class="back-top" id="back-top">VOLTAR AO INÍCIO DA LISTA</button>
-  </div>
-</section>
-
-<!-- Seção de personagens -->
-<section class="section" id="personagens">
-  <div class="container">
-    <h2 class="section-title">PERSONAGENS E LADOS DO CONFLITO</h2>
-    <p class="lead">Espaços reservados. Os nomes, imagens e descrições serão adicionados depois, após verificação.</p>
-
-    <div class="cast">
-      <div class="cast-column cast-register">
-        <h3>LADO DO REGISTRO</h3>
-        <div class="cast-item">
-          <div class="cast-photo" data-image="assets/images/characters/registro-01.jpg" data-alt="Personagem do lado do Registro"><span>ADICIONAR IMAGEM</span></div>
-          <div><h4>Nome do personagem</h4><p>Descrição a ser inserida.</p></div>
-        </div>
-        <div class="cast-item">
-          <div class="cast-photo" data-image="assets/images/characters/registro-02.jpg" data-alt="Personagem do lado do Registro"><span>ADICIONAR IMAGEM</span></div>
-          <div><h4>Nome do personagem</h4><p>Descrição a ser inserida.</p></div>
-        </div>
-        <div class="cast-item">
-          <div class="cast-photo" data-image="assets/images/characters/registro-03.jpg" data-alt="Personagem do lado do Registro"><span>ADICIONAR IMAGEM</span></div>
-          <div><h4>Nome do personagem</h4><p>Descrição a ser inserida.</p></div>
-        </div>
-      </div>
-      <div class="cast-column cast-resist">
-        <h3>LADO DA RESISTÊNCIA</h3>
-        <div class="cast-item">
-          <div class="cast-photo" data-image="assets/images/characters/resistencia-01.jpg" data-alt="Personagem do lado da Resistência"><span>ADICIONAR IMAGEM</span></div>
-          <div><h4>Nome do personagem</h4><p>Descrição a ser inserida.</p></div>
-        </div>
-        <div class="cast-item">
-          <div class="cast-photo" data-image="assets/images/characters/resistencia-02.jpg" data-alt="Personagem do lado da Resistência"><span>ADICIONAR IMAGEM</span></div>
-          <div><h4>Nome do personagem</h4><p>Descrição a ser inserida.</p></div>
-        </div>
-        <div class="cast-item">
-          <div class="cast-photo" data-image="assets/images/characters/resistencia-03.jpg" data-alt="Personagem do lado da Resistência"><span>ADICIONAR IMAGEM</span></div>
-          <div><h4>Nome do personagem</h4><p>Descrição a ser inserida.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Sobre -->
-<section class="section section-alt" id="sobre">
-  <div class="container narrow">
-    <h2 class="section-title">SOBRE O PROJETO</h2>
-    <p>Este é um projeto educacional desenvolvido para praticar HTML, CSS, JavaScript, design de interfaces e organização de conteúdo. Trata-se de uma fan page independente, sem vínculo oficial com a Marvel Comics.</p>
+    <h2 class="visually-hidden">Explore o site</h2>
+    <ol class="page-links">
+      <li><a href="historia.html"><span class="pl-num">01</span><span class="pl-name">A HISTÓRIA</span><span class="pl-desc">A premissa e os dois lados do conflito.</span></a></li>
+      <li><a href="guia.html"><span class="pl-num">02</span><span class="pl-name">GUIA DE LEITURA</span><span class="pl-desc">A sequência de edições e o seu progresso.</span></a></li>
+      <li><a href="personagens.html"><span class="pl-num">03</span><span class="pl-name">PERSONAGENS</span><span class="pl-desc">Os lados do conflito.</span></a></li>
+      <li><a href="sobre.html"><span class="pl-num">04</span><span class="pl-name">SOBRE</span><span class="pl-desc">Sobre este projeto educacional.</span></a></li>
+    </ol>
   </div>
 </section>
 
@@ -210,11 +95,11 @@
     </div>
     <nav aria-label="Navegação do rodapé">
       <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#historia">A História</a></li>
-        <li><a href="#guia">Guia de Leitura</a></li>
-        <li><a href="#personagens">Personagens</a></li>
-        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="historia.html">A História</a></li>
+        <li><a href="guia.html">Guia de Leitura</a></li>
+        <li><a href="personagens.html">Personagens</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
       </ul>
     </nav>
   </div>
@@ -223,7 +108,6 @@
   </div>
 </footer>
 
-<script src="js/editions.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
